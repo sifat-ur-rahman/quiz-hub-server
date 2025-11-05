@@ -6,7 +6,7 @@ Before you begin, ensure you have the following installed on your system:
 Clone the repository:
 
 ```bash
-git clone https://github.com/sifat-ur-rahman/mbcm-server.git
+git clone https://github.com/sifat-ur-rahman/quiz-hub-server.git
 ```
 
 ## Run the server application locally
