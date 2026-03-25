@@ -21,8 +21,6 @@ app.use(
 //https://timely-cannoli-fe9bd7.netlify.app
 //application route.
 
-
-
 app.use('/', UserRoute);
 app.use('/', AuthRoutes);
 

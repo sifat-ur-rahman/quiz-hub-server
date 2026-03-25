@@ -39,9 +39,11 @@ const userRegistrationIntoDB = async (Data: TUser) => {
   };
 };
 
-const userVerifyDB = async ({ username, phone,email }: TUser) => {
+const userVerifyDB = async ({ username, phone, email }: TUser) => {
   //username or phone verify
-  const user = await User.findOne({ $or: [{ username }, { phone }, {email}] });
+  const user = await User.findOne({
+    $or: [{ username }, { phone }, { email }],
+  });
 
   if (!user) {
     throw new AppError(404, 'User not found');
